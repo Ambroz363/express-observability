@@ -1,0 +1,59 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables
+.env
+.env.*.local
+
+# Binaries
+*.exe
+*.out
+*.app
+
+# Build output
+dist/
+build/
+
+# Dependency directories (if using other tools)
+jspm_packages/
+.bower_components/
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+*.lcov
+
+# TypeScript
+*.tsbuildinfo
+
+# PM2 process logs
+.pids/
+*.log
+
+# Others
+.nyc_output/
+.cache/
+.tmp/
