@@ -1,7 +1,8 @@
+import "./metrics/tracer.js";
+
 import express from "express";
 import { meter } from "./metrics/meter.js";
 import { logger } from "./metrics/logger.js";
-import "./metrics/tracer.js"
 
 const PORT = 8081;
 
@@ -14,7 +15,7 @@ const requestCounter = meter.createCounter("http_requests", {
 app.use((req, res, next) => {
   logger.info(`Started processing request: ${req.url}`);
   requestCounter.add(1, { method: req.method, route: req.route });
-  next()
+  next();
 });
 
 app.get("/", (req, res) => {
